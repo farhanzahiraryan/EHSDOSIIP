@@ -54,39 +54,3 @@ Feature: EHSDOSIIP WP-Admin Functionalities.
  
  
  
-  #Sprint-4
-  #Story: DOS-42 State by State Landing Page: Overview + Map
-  @Reg
-  Scenario: As a user I shall be able to see the fully designed State Map page.
-    Given the user is in state.gov
-    When the user is in United State Impact Overview page
-    Then the user shall be able to see the United State Impact Overview header
-    And the Select a State for State-Specific Impact title
-    And the Plain Text Version hyperlink
-    When the user click on the Plain Text Version Hyperlink
-    Then the impact overview map shall disappear
-    And the View Impact by State list shall appear
-    And the Interactive Map version hyperlink shall replace Plain Text Version hyperlink
-    When the user click on Interactive Map Version hyperlink
-    Then the View Impact By State list shall disappear
-    And the Impact Overviw map shall reappear
-    When the user hover over the mouse to California in the map
-    Then the user shall be able to see the tooltip having the full State name
-
- 
-  #Sprint - 6
-  #Story: DOS-244 Biography Template: Create Biography collection template
-  @Regn @InProgress
-  Scenario: As a user I shall be able to create a Biography page using biography templete.
-    Given the user is "Add New Page" page having biography templete
-    When the user Insert Page Title in "Enter Title Here" edit box
-    And insert Collection: Header Description edit box
-    And select Breadcrumb from the dropown menu
-    And Select eleven personal from the Curated Biography list
-    And publish the page
-    And Click on "view Page" button for preview
-    Then the biography page should have a Breadcrumb hyperlink
-    And the page title
-    And the description
-    And ten personal selected
-    And "Next" hyperlink to navigate to next page
